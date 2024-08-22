@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header>
+    <iconify-icon icon="fluent-emoji:books"></iconify-icon>
+    <h1>Biblioteca</h1>
+    <iconify-icon icon="fluent-emoji:books"></iconify-icon>
+  </header>
+
+
+  <main>
+
+    <div class="buscarPorcodigo">
+      <div class="barraBuscar">
+        <button id="btnCodIsbn" class="btnCodIsbn"><iconify-icon icon="ic:sharp-search"></iconify-icon></button>
+        <input id="codIsbn" type="text" placeholder="Codigo">
+        <button id="btnFiltro" class="btnFiltro"><iconify-icon icon="mage:filter"></iconify-icon></button>
+      </div>
+      <div class="categoria">
+        <div class="ti">
+          <p>Filtrar por categoria</p>
+        </div>
+        
+        <div class="op1">
+          <label for="novela">Novela</label>
+          <input type="checkbox" name="novela" id="novela">
+        </div>
+        
+        <div class="op2">
+          <label for="thriller">Thriller</label>
+          <input type="checkbox" name="thriller" id="thriller">
+        </div>
+        
+        <div class="op3">
+          <label for="ciencia">Ciencia ficción</label>
+          <input type="checkbox" name="ciencia" id="ciencia">
+        </div>
+        
+        <div class="bt">
+          <button id="btnCategoria">Aplicar</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="libros">
+      
+      <!-- Div para mostrar todos los libros -->
+      <div class="verTodos" id="todos">
+      </div>
+    </div>
+      <div class="parrafo">
+        <p> <strong> Nos alegra mucho tenerte aquí.</strong></p>
+        <ol>
+          <li>Identifica el libro que más te interesen.</li>
+          <li>Una vez encontrado, digita su código y lo te prestaremos.</li>
+        </ol>
+        <p>Sumerjete en el mundo de la lectura de inmediato.</p>
+      </div>
+
+      <div class="contentOpciones">  
+        <div class="opciones">
+          <div class="prestar">
+            <p>Libro que quieres pedir Prestado</p>
+            <input id="codigo" type="text" placeholder="Codigo">
+            <button id="btnPrestar">Aceptar</button>
+          </div>
+    
+          <div class="devolver">
+            <p>Libro que quieres devolver</p>
+            <input id="codgDevolver" type="text" placeholder="Codigo">
+            <button id="btnDevolver">Aceptar</button>
+          </div>
+        </div>
+        <div id="rtaOpciones" class="rtaOpciones">
+        </div>
+
+      </div>
+
+      <div class="contentConsulta">
+        <div class="consulta">
+          <div class="prestados">
+            <p>Libros prestados</p>
+            <button id="btnLiPrestados">consultar</button>
+          </div>
+    
+          <div class="disponibles">
+            <p>Libros disponibles</p>
+            <button id="btnDisponibles">consultar</button>
+          </div>
+        </div>
+        <div id="rtaConsulta" class="rtaConsulta"></div>
+
+      </div>
+
+    
+  </main>
+<script src="./script/app.js"></script>
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</body>
+
+</html>
